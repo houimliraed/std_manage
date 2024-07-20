@@ -21,3 +21,8 @@ def index():
 def get_student(student_id : int):
     return students[student_id]["name"]
     
+    
+@app.get("/testingapi/{id}")
+def getapitesting(id : int):
+    return students[id]    
+    
